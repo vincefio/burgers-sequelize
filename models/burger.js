@@ -5,10 +5,13 @@
 
 module.exports = function(sequelize, DataTypes) {
   var Burger = sequelize.define("Burger", {
-    burger_name: DataTypes.STRING,
+    burger_name: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
     devoured: {
       type: DataTypes.BOOLEAN,
-      defaultValue: false
+      defaultValue: false,
     },
     date: {
       type: DataTypes.DATE,
