@@ -8,8 +8,6 @@ Upon loading the page the user can see which burgers are available, and which ha
 
 ![2017-08-16](https://user-images.githubusercontent.com/25482392/29373942-c0156234-827d-11e7-944e-cfef519a4261.png)
 
-![2017-08-16 1](https://user-images.githubusercontent.com/25482392/29373937-bcbd11b8-827d-11e7-8916-e1ca5e530c7a.png)
-
 User can then input any burger they'd like
 
 ![2017-08-16 1](https://user-images.githubusercontent.com/25482392/29373937-bcbd11b8-827d-11e7-8916-e1ca5e530c7a.png)
