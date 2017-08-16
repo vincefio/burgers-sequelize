@@ -1,21 +1,26 @@
 var express = require("express");
-
+var db = require('../models')
 var router = express.Router();
-var burger = require("../models/burger");
+var Burger = require("../models/burger");
 
 // get route -> index
 router.get("/", function(req, res) {
   res.redirect("/burgers");
 });
 
-// router.get("/burgers", function(req, res) {
-//   // express callback response by calling burger.selectAllBurger
-//   burger.all(function(data) {
-//     // Wrapping the array of returned burgers in a object so it can be referenced inside our handlebars
-//     var hbsObject = { burgers: data };
-//     res.render("index", hbsObject);
-//   });
-// });
+router.get("/burgers", function(req, res) {
+  // express callback response by calling burger.selectAllBurger
+  // db.Burger.findAll(function(data) {
+  //   // Wrapping the array of returned burgers in a object so it can be referenced inside our handlebars
+  //   var hbsObject = { burgers: data };
+  //   res.render("index", hbsObject);
+  // });
+  db.Burger.findAll({})
+  	.then(function(dbPost){
+  		var hbsObject = { burgers: dbPost };
+    	res.render("index", hbsObject);
+  	})
+});
 
 // // post route -> back to index
 // router.post("/burgers/create", function(req, res) {
