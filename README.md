@@ -2,6 +2,8 @@
 
 Burgers-Sequelize is a restaurant application that allows users to add a burger that they would like to eat to a list.  And then devour the burger when they would like to!
 
+heroku link: https://murmuring-wildwood-78963.herokuapp.com/burgers
+
 Behind the scenes I am using sequelize ORM to find, create, and update as the user desires, then rendering them to the page using express-handlebars
 
 Upon loading the page the user can see which burgers are available, and which have already been eaten
